@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "#paypal-button-container>div>iframe[id^='jsx-iframe-']"
+}

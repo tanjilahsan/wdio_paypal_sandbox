@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664728062690' stop='1664728070305'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1664728062691' status='broken' stop='1664728070303'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.91'/>
+            </parameters>
+            <steps>
+                <step start='1664728062697' status='passed' stop='1664728069772'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4e8959dc-24b2-44c9-8966-8f98719d33e3-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664728069776' status='broken' stop='1664728070303'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='67efe798-7778-4947-b1bc-5e8e010b8d61-attachment.json' type='application/json' size='98'/>
+                    </attachments>
+                    <steps>
+                        <step start='1664728069783' status='passed' stop='1664728069900'>
+                            <name>POST /session/:sessionId/frame</name>
+                            <title>POST /session/:sessionId/frame</title>
+                            <attachments>
+                                <attachment title='Request' source='f3bb6b9f-1d03-4c58-8622-0d58cb2d0b97-attachment.json' type='application/json' size='14'/>
+                                <attachment title='Response' source='43b1c040-9bb7-41d9-ae3b-b16b241060bf-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1664728070061' status='passed' stop='1664728070300'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='e0ccfa93-992b-4da3-aac5-e97d5de7d434-attachment.png' type='image/png' size='15237'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid argument: missing 'ELEMENT'
+                  (Session info: chrome=106.0.5249.91)</message>
+                <stack-trace>invalid argument: invalid argument: missing 'ELEMENT'
+                  (Session info: chrome=106.0.5249.91)
+                    at getErrorFromResponseBody (F:\wdio\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (F:\wdio\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (F:\wdio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (F:\wdio\test\specs\example.e2e.ts:6:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
